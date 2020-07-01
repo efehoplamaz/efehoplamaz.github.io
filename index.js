@@ -5,11 +5,6 @@ $(document).ready(function(){
   $("button.scroll-to-projects").click(function(){
     $('body,html').animate({ scrollTop: $('.project_section').offset().top}, 1200);
   });
-  $("button.scroll-to-aboutme").hover(function(){
-    $(this).css("background-color", "yellow");
-    }, function(){
-    $(this).css("background-color", "pink");
-  });
 });
 
 
