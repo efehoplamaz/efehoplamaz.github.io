@@ -1,56 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Hello visitor!</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <head>
+        <title>Hello visitor!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!--Import CSS-->
-    <link rel="stylesheet" href="style.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <!--Import CSS-->
+        <link rel="stylesheet" href="style.css">
 
-    <!--Import JS-->
-    <script src="index.js" defer></script>
+        <!--Import JS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="mainpage.js" defer></script>
 
-</head>
-<body>
-    <div class = "all">
+    </head>
 
-        <div class = "main">
-            <div class = "info" id = "hello">
-                <p class = "in_text">
-                    In[1]   :
-                </p>
-                <div class = "cell">
-                    <p class = "cell_text">
-                       <!--<span style = "color: rgb(11, 133, 11); font-weight: bold;">import</span> EfeSinanHoplamaz-->
-                       <br> <span style = "color: rgb(11, 133, 11); font-weight: bold;">class</span> <span style = "color: rgb(0, 0, 255);">EfeHoplamaz</span>():
-                       <br>
-                       <br> &nbsp;&nbsp;&nbsp;&nbsp;<span style = "color: rgb(11, 133, 11); font-weight: bold;">def</span> <span style = "color: rgb(0, 0, 255);">__init__</span>(self):
-                       <br>
-                       <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.name <span style = "color: rgb(170, 34, 255);">=</span> <span style = "color: rgb(186,33,33);">"Efe Hoplamaz"</span>
-                       <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.university <span style = "color: rgb(170, 34, 255);">=</span> <span style = "color: rgb(186,33,33);">"The University of Edinburgh"</span>
-                    </p>
-                </div>
+    <body>
+        <ul>
+            <li>
+                <a href="#">
+                    <div class="icon">
+                        <i class="fa fa-male" aria-hidden="true"></i>
+                    </div>
+                    <div class="name" data-text= "About Me">About Me</div>
+                </a>
+            </li>
+            
+            <li>
+                <a href="https://drive.google.com/file/d/0B3b-TywX7-_CRTFnZ2I3dVdPVXV2Q3A4UFlZdDlhRG5xQ0o4/view?usp=sharing">
+                    <div class="icon">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>
+                    </div>
+                    <div class="name" data-text= "CV">CV</div>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://github.com/efehoplamaz">
+                    <div class="icon">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </div>
+                    <div class="name" data-text= "Github">Projects</div>
+                </a>
+            </li>
+
+            <li>
+                <a href="mailto:hopefe.17@gmail.com">
+                    <div class="icon">
+                        <i class="fa fa-male" aria-hidden="true"></i>
+                    </div>
+                    <div class="name" data-text= "Contact me">Contact me</div>
+                </a>
+            </li>
+        </ul>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <p class="mainpage_greeting">Hello world, I am Efe</div>
             </div>
+            
+            <div class="mySlides fade">
+              <p class="mainpage_greeting">Merhaba, ben Efe</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <p class="mainpage_greeting">Hallo Welt, ich bin Efe</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <p class="mainpage_greeting">Hola mundo, soy Efe</div>
+            </div>
+
         </div>
 
-        <div class = "main">
-            <div class = "info" id = "CV">
-                <p class = "in_text">
-                    In[2]   :
-                </p>
-                <div class = "cell">
-                    <p class = "cell_text">
-                        <a href="https://drive.google.com/file/d/0B3b-TywX7-_CRTFnZ2I3dVdPVXV2Q3A4UFlZdDlhRG5xQ0o4/view">CV</a>
-                    </p>
-                </div>
-            </div>
+        <div class = "button">
+            <button class="scroll-to-aboutme">
+                Get to know me more...
+            </button>
         </div>
 
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        <div class = "about_me">
+            <p class = "about_me_section">My name is Efe Sinan Hoplamaz. I am 21 and am from Istanbul, based in Edinburgh. 
+                Studying Artificial Intelligence and Computer Science at The University of Edinburgh. I am a part-time drummer and
+                a music geek.</p>
 
-    </div>
-</body>
+            <img src = "./stick.png" alt = "my_pic" class = "my_pic">
+
+            <button class="scroll-to-projects">
+                See my projects...
+            </button>
+        </div>
+
+        
+        <div class = "projects">
+            <p class = "project_section">TEST</p>
+        </div>
+
+
+        <!--<div class="footer">
+            <p>© 2020 Efe Sinan Hoplamaz | All rights reserved</p>
+        </div>-->
+
+    </body>
+
 </html>
