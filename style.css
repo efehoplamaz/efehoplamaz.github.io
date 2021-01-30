@@ -1,24 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
   body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: 'VT323', sans-serif;
-    background: blue;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
+    background: #fff;
   }
 
-  ul{
+  ul.nav_bar{
     top: 0;
     width: 100%;
     margin: 0;
     padding: 20px 0;
-    background: white;
+    background: #27282c;
     display: flex;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   }
-  ul li{
+  ul li.nav_bar{
     list-style: none;
     text-align: center;
     border-right: 1px solid white;
@@ -26,10 +23,10 @@
   
   ul li a{
     text-decoration: none;
-    font-size: 20px;
-    padding: 0 130px;
+    font-size: 16px;
+    padding: 0 173px;
     display: block;
-    color: black;
+    color: rgb(186, 187, 188);
   }
 
   p.mainpage_greeting{
@@ -37,48 +34,93 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); 
-    font-family: 'VT323', sans-serif;
     font-size: 5vw;
-    color: white;
+    font-weight: 300;
+    color: #27282c;
   }
 
   button.scroll-to-aboutme{
     position: absolute;
     top: 65%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    height: 70px;
+    width: 170px;
+    transform: translate(-50%, -30%);
     display:inline-block;
     padding:0.3em 1.2em;
     margin:0 0.1em 0.1em 0;
     border:0.16em solid rgba(255,255,255,0);
-    border-radius:2em;
     box-sizing: border-box;
     text-decoration:none;
-    font-family:'Roboto',sans-serif;
+    font-size: 13px;
+    font-family:-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
     font-weight:300;
-    color: orange;
-    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    color: white;
     text-align:center;
     transition: all 0.2s;
-    background-color: white;
+    background-color: #900603;
   }
-  /*button.scroll-to-aboutme:hover{
-    border-color: rgba(255,255,255,1);
-    color: red;
-  }*/
+
+  .education_exp{
+    margin-left: 20px;
+  }
 
   div.about_me{
     position: absolute;
     top: 105%;
+    height: 610px;
     width: 100%;
-    padding: 195px 0;
-    background: white;
+    background-color: white;
+  }
+
+  div.about_me_text{
+    display: flex;
+    height: 70%;
+  }
+
+  #left {
+    flex: 0 0 55%;
+    height: 70%;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #right {
+    flex: 1;
+    height: 70%;
   }
 
   p.about_me_section{
+    text-align: center;
+    top: 30%;
+    color: black;
+    font-family:-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
+  }
+
+  div.button_to_resume{
+    height: 10%;
+  }
+
+  button.scroll-to-resume{
     position: absolute;
-    width: 40%;
-    transform: translate(60px, 40px);
+    top: 70%;
+    left: 43%;
+    height: 70px;
+    width: 170px;
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    border:0.16em solid rgba(255,255,255,0);
+    box-sizing: border-box;
+    text-decoration:none;
+    font-size: 13px;
+    font-family:-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
+    font-weight:300;
+    color: white;
+    text-align:center;
+    transition: all 0.2s;
+    background-color: #900603;
   }
 
   img.my_pic{
@@ -87,15 +129,387 @@
     transform: translate(700px, 20px);
   }
 
-  button.scroll-to-projects{
+  div.resume{
     position: absolute;
-    transform: translate(-160px, 150px);
+    top: 105%;
+    width: 100%;
+    background: white;
+  }
 
+  header{
+    margin: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+  }
+  header.section_title{
+    padding: 24px 24px 0;
+    display: flex;
+  }
+
+  .pv-profile-section__card-heading {
+    flex: 1;
+    font-weight: 400;
+    color: rgba(0,0,0,.9);
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+
+  ul.list_of_experience{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    margin-top: -4px;
+    list-style: none inside;
+  }
+
+  li.exp_element{
+    background-color: var(--white,#fff);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    display: list-item;
+    text-align: -webkit-match-parent;
+  }
+
+  section.exp_elm_inside{
+    padding: 20px 72px 0 24px;
+    background-color: var(--white,#fff);
+    margin: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    display: block;
+    border-bottom: 1px solid var(--warm-gray-30,#e6e9ec);
+  }
+
+  div.element_container{
+    flex-direction: column!important;
+    width: 100%!important;
+    display: flex!important;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+  }
+
+  a.element_info{
+    width: 100%!important;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+  }
+
+  div.element_logo{
+    height: 56px;
+    width: 56px;
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    display: block;
+    box-sizing: inherit;
+  }
+
+  img.logo_img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    background-clip: content-box;
+    border: 4px solid transparent;
+    border-radius: 6px;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+  }
+
+  div.entity_summary{
+    flex: 1 0;
+    width: auto;
+    margin-left: 80px;
+    overflow: hidden;
+    margin-bottom: 8px!important;
+    min-height: 60px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: inherit;
+    display: block;
+  }
+
+  h3.experience_position{
+    font-size: 1.6;
+    line-height: 1.5;
+    font-weight: 600;
+    color: rgba(0,0,0,.9);
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: inherit;
+    vertical-align: baseline;
+    background: transparent;
+    display: block;
+    margin-left: 20px;
+  }
+
+  p.experience_comp_name{
+    display: inline;
+    font-size: 1.4;
+    line-height: 1.42857;
+    font-weight: 400;
+    color: rgba(0,0,0,.9);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: inherit;
+    margin-left: 20px;
+  }
+
+  span.exp_bullet{
+    display: inline;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: inherit;
+  }
+
+  span.exp_bullet::before{
+    content: "\00B7";
+    padding: 0 4px 0 0;
+  }
+
+  div.experience_dates{
+    display: flex!important;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: inherit;
+    margin-left: 20px;
+  }
+
+  h4.exp_date{
+    font-size: 1.4;
+    line-height: 1.42857;
+    font-weight: 400;
+    color: rgba(0,0,0,.6);
+    font-style: normal;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: inherit;
+    display: block;
+  }
+
+  h4.exp_time_amt{
+    font-size: 1.4;
+    line-height: 1.42857;
+    font-weight: 400;
+    color: rgba(0,0,0,.6);
+    font-style: normal;
+    outline: 0; 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: inherit;
+    display: block;
+  }
+
+  h4.exp_location{
+    display: block!important;
+    font-size: 1.4;
+    line-height: 1.42857;
+    font-weight: 400;
+    color: rgba(0,0,0,.6);
+    font-style: normal;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: inherit;
+    margin-left: 20px;
+  }
+
+  img.school_icon{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    float: left;
+    display: block;
+    margin-left: -20px;
+    margin-top: 5px;
+    background-color: #fff;
+  }
+
+  div.inner{
+    width: 700px;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  p.test{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
   }
 
   div.projects{
     position: absolute;
-    top: 205%;
+    top: 521%;
     width: 100%;
-    background: red;
+    background: white;
   }
+
+  ul.project_list{
+    display: inline-block;
+        margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    margin-top: -4px;
+    list-style: none inside;  
+  }
+  ul.project_list li{ 
+    vertical-align: middle; 
+    list-style: none; 
+    height: 80px; 
+    display: inline-table;
+    padding: 20px 0; 
+  }
+
+  div.github_project_box {
+    flex-direction: column!important;
+    width: 100%!important;
+    display: flex!important;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    background-color: white;
+    width: 80%;
+    padding: 16px!important;
+    border: 1px solid #e1e4e8;
+  }
+
+  span.project_name{
+    color: #0366d6;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: 600!important;
+    font-size: 14px;
+  }
+
+  p.project_explanation{
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 12px!important;
+    line-height: 1.5;
+    font-weight: normal;
+    color: #586069!important;
+    margin-top: 8px!important;
+    
+  }
+
+  span.tool{
+    display: inline-block!important;
+  }
+
+  span.tool_used{
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 12px!important;
+    font-weight: normal;
+    color: #586069!important;
+  }
+
+  span.circle{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+
+  div.element_details{
+    margin-left: 80px;
+    font-size: 1.4rem;
+    display: block;
+    text-align: -webkit-match-parent;
+    font-weight: 400;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
+    line-height: 1.42857;
+    color: rgba(0,0,0,.6);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: inherit;
+  }
+
+  p.element_description{
+    line-height: 1.5rem;
+    margin-left: 76px;
+    max-height: 16rem;
+    overflow: hidden;
+    position: relative;
+    font-size: 0.9rem;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+    display: block;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
+  } 

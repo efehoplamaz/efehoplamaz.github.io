@@ -17,35 +17,26 @@
     </head>
 
     <body>
-        <ul>
-            <li>
-                <a href="#">
+        <ul class = "nav_bar">
+            <li class = "nav_bar">
+                <a href="https://www.linkedin.com/in/efehoplamaz/">
                     <div class="icon">
-                        <i class="fa fa-male" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                     </div>
-                    <div class="name" data-text= "About Me">About Me</div>
+                    <div class="about_me_header" data-text= "LIn">Linked-In Profile</div>
                 </a>
             </li>
-            
-            <li>
-                <a href="https://drive.google.com/file/d/0B3b-TywX7-_CRTFnZ2I3dVdPVXV2Q3A4UFlZdDlhRG5xQ0o4/view?usp=sharing">
-                    <div class="icon">
-                        <i class="fa fa-file-text" aria-hidden="true"></i>
-                    </div>
-                    <div class="name" data-text= "CV">CV</div>
-                </a>
-            </li>
-
-            <li>
+    
+            <li class = "nav_bar">
                 <a href="https://github.com/efehoplamaz">
                     <div class="icon">
                         <i class="fa fa-github" aria-hidden="true"></i>
                     </div>
-                    <div class="name" data-text= "Github">Projects</div>
+                    <div class="name" data-text= "Github">Github Profile</div>
                 </a>
             </li>
 
-            <li>
+            <li class = "nav_bar">
                 <a href="mailto:hopefe.17@gmail.com">
                     <div class="icon">
                         <i class="fa fa-male" aria-hidden="true"></i>
@@ -57,52 +48,390 @@
 
         <div class="slideshow-container">
 
-            <div class="mySlides fade">
-              <p class="mainpage_greeting">Hello world, I am Efe</div>
+            <div class="mySlides">
+              <p class="mainpage_greeting">Hello I am Efe</div>
             </div>
             
-            <div class="mySlides fade">
-              <p class="mainpage_greeting">Merhaba, ben Efe</div>
+            <div class="mySlides">
+              <p class="mainpage_greeting">Merhaba ben Efe</div>
             </div>
             
-            <div class="mySlides fade">
-              <p class="mainpage_greeting">Hallo Welt, ich bin Efe</div>
+            <div class="mySlides">
+              <p class="mainpage_greeting">Hallo ich bin Efe</div>
             </div>
             
-            <div class="mySlides fade">
-                <p class="mainpage_greeting">Hola mundo, soy Efe</div>
+            <div class="mySlides">
+                <p class="mainpage_greeting">Hola yo soy Efe</div>
             </div>
 
         </div>
 
         <div class = "button">
-            <button class="scroll-to-aboutme">
-                Get to know me more...
+            <button class="scroll-to-aboutme" style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);">
+                See my resume
             </button>
         </div>
 
         
-        <div class = "about_me">
-            <p class = "about_me_section">My name is Efe Sinan Hoplamaz. I am 21 and am from Istanbul, based in Edinburgh. 
-                Studying Artificial Intelligence and Computer Science at The University of Edinburgh. I am a part-time drummer and
-                a music geek.</p>
-
-            <img src = "./stick.png" alt = "my_pic" class = "my_pic">
-
-            <button class="scroll-to-projects">
-                See my projects...
-            </button>
-        </div>
-
-        
-        <div class = "projects">
-            <p class = "project_section">TEST</p>
-        </div>
-
-
-        <!--<div class="footer">
-            <p>© 2020 Efe Sinan Hoplamaz | All rights reserved</p>
+        <!--<div class = "about_me">
+            <div class = "about_me_text">
+                <div id="left">
+                    <p class = "about_me_section">
+                        I am Efe, a 21 year old boy from Istanbul/Turkey based in Edinburgh. Studying Artificial Intelligence and Computer Science at The University of Edinburgh.
+                        I am interested in data science and artificial intelligence and am motivated to develop my skills in these areas.
+                        I am a part-time drummer, a music geek and a marathon runner.
+                    </p>
+                </div>
+                <div id="right">
+                    Right side div
+                </div>    
+            </div>
+            <div class = "button_to_resume">
+                <button class="scroll-to-resume">
+                    See my resume
+                </button>
+            </div>
         </div>-->
+
+        
+        <div class = "resume">
+            <div class = "inner">
+
+                <div class = "experience" style = "border-bottom: 2px solid black;">
+                    <header class = "section_title">
+                        <h2 class = "pv-profile-section__card-heading">Education</h2>
+                    </header>
+                    
+                    <ul class = "list_of_experience">
+                        <li class = "exp_element">
+
+                            <section class = "exp_elm_inside">
+                                <div class = "element_container">
+                                    <a class = "element_info" href = "https://www.ed.ac.uk/">
+                                        <div class = "element_logo"><img src= "https://upload.wikimedia.org/wikipedia/en/7/7a/University_of_Edinburgh_ceremonial_roundel.svg" class = "logo_img"></div>
+                                        <div class = "entity_summary">
+                                            <h3 class = "experience_position"> Artificial Intelligence and Computer Science (Hons.), BSc.</h3>
+                                            <p class = "experience_comp_name">The University of Edinburgh <span class = "exp_bullet">First-class Honours</span></p>
+                                            <div class = "experience_dates">
+                                                <h4 class = "exp_date">September 2017 - June 2021</h4>
+                                            </div>
+                                            <h4 class = "exp_location"><span>Edinburgh, UK</span></h4>
+                                        </div>
+                                    </a>
+                                    <div class = "element_details">
+                                        <p class = "element_description">
+                                            <b>Honours project:</b> Efficient Deep Learning for Acoustic Biodiversity Monitoring<br>
+                                            <b>Courses:</b> Data Structures and Algorithms, Data Analysis,
+                                            Discrete Mathematics, Software Testing, Database Systems,
+                                            Natural Language Processing, Computer Communications and
+                                            Networks, Quantum Computing, Machine Learning, Deep
+                                            Learning, Artificial Intelligence, Probability Theory, Linear
+                                            Algebra, Computer Security<br>
+                                            <b>Relevant coursework:</b>Handwriting recognition using Multi-layer Neural Networks (NumPy, Python),
+                                            Exploratory Analysis using Classification and Regression
+                                            algorithms (Scikit-Learn, Python), Natural Language Query System (NTLK, Python), UDP
+                                            Socket Programming (Java)
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            
+
+                            <section class = "exp_elm_inside">
+                                <div class = "element_container">
+                                    <a class = "element_info" href = "https://website.robcol.k12.tr/en/home-page">
+                                        <div class = "element_logo"><img src= "https://media-exp1.licdn.com/dms/image/C4D0BAQEH6i8v9zBhnw/company-logo_200_200/0/1601554869196?e=1620259200&v=beta&t=1CDF575l8pdWd1-dCrD4HyQF4iSntCSP2_u33jnPWM4" class = "logo_img"></div>
+                                        <div class = "entity_summary">
+                                            <h3 class = "experience_position"> High School</h3>
+                                            <p class = "experience_comp_name">Robert College Istanbul <span class = "exp_bullet">GPA: 88.5%</span></p>
+                                            <div class = "experience_dates">
+                                                <h4 class = "exp_date">September 2012 - June 2017 </h4>
+                                            </div>
+                                            <h4 class = "exp_location"><span>Istanbul, Turkey</span></h4>
+                                        </div>
+                                    </a>
+                                    <div class = "element_details">
+                                        <p class = "element_description"></p>
+                                    </div>
+                                </div>
+                            </section>
+
+
+                        </li>
+                    </ul>
+
+                </div>
+
+
+
+                <div class = "experience" style = "border-bottom: 2px solid black;">
+                    <header class = "section_title">
+                        <h2 class = "pv-profile-section__card-heading">Experience</h2>
+                    </header>               
+                    <ul class = "list_of_experience">
+                        <li class = "exp_element">
+
+                            <section class = "exp_elm_inside">
+                                <div class = "element_container">
+                                    <a class = "element_info" href = "https://www.qnbeyond.com/">
+                                        <div class = "element_logo"><img src= "https://media-exp1.licdn.com/dms/image/C560BAQGGHah_DfTg8w/company-logo_200_200/0/1577089293101?e=1620259200&v=beta&t=uhXGMqmXO7gJR_K7MwXlf_7wfYoKZMcvGKHU-3RezXI" class = "logo_img"></div>
+                                        <div class = "entity_summary">
+                                            <h3 class = "experience_position">Data Science Intern</h3>
+                                            <p class = "experience_comp_name">QNBEYOND <span class = "exp_bullet">Internship</span></p>
+                                            <div class = "experience_dates">
+                                                <h4 class = "exp_date">Jul 2020 – Oct 2020 </h4>
+                                            </div>
+                                            <h4 class = "exp_location"><span>Istanbul, Turkey</span></h4>
+                                        </div>
+                                    </a>
+                                    <div class = "element_details">
+                                        <p class = "element_description">
+                                            Developed a project with the Data Science
+                                            ML Engineering Team, which involves analyzing
+                                            the behavior of internet banking clients of
+                                            QNB Finansbank. This project aims to accurately
+                                            estimate and remind internet banking
+                                            customers about their upcoming payments
+                                            without exact ’billing dates’ (e.g., rent payments,
+                                            money transfers) using machine learning
+                                            algorithms.<br><br>
+                                            <b>Technologies used:</b> Python, Scikit-learn, pandas, NumPy<br>
+                                            <b>Github:</b> https://github.com/efehoplamaz/Predict-the-Next-Transaction-Date
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class = "exp_elm_inside">
+                                <div class = "element_container">
+                                    <a class = "element_info" href = "https://mimoza.marmara.edu.tr/~murat.ganiz/BIGDaTAlab/projects.html">
+                                        <div class = "element_logo"><img src= "https://upload.wikimedia.org/wikipedia/tr/7/70/Marmara_%C3%9Cniversitesi_logo.png" class = "logo_img"></div>
+                                        <div class = "entity_summary">
+                                            <h3 class = "experience_position">Research Assistant Intern</h3>
+                                            <p class = "experience_comp_name">Big Data Lab Research Group at Marmara
+                                                University <span class = "exp_bullet">Internship</span></p>
+                                            <div class = "experience_dates">
+                                                <h4 class = "exp_date">Jun 2019 – Aug 2019 </h4>
+                                            </div>
+                                            <h4 class = "exp_location"><span>Istanbul, Turkey</span></h4>
+                                        </div>
+                                    </a>
+                                    <div class = "element_details">
+                                        <p class = "element_description">
+                                            Completed a Big Data analysis project within the university research team by implementing a custom text classifier,
+                                            SupervisedMeaning Classifier (SMC), using Python libraries (Scikit-learn, gensim). This project aims to have higher
+                                            accuracy on lower percentages of training set in train-test splits.<br><br>
+                                            <b>Research paper:</b> Helmholtz Principle based Supervised and Unsupervised Feature Selection Methods for Text Mining (https://doi.org/10.1016/j.ipm.2016.03.007)
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class = "exp_elm_inside">
+                                <div class = "element_container">
+                                    <a class = "element_info" href = "http://verius.ai/">
+                                        <div class = "element_logo"><img src= "https://media-exp1.licdn.com/dms/image/C4E0BAQG7Fwjg7AENFA/company-logo_200_200/0?e=1612396800&v=beta&t=CiYOl9qe_60agapBZgHBdmwpBjl9UpZeni-ElXhCWjw" class = "logo_img"></div>
+                                        <div class = "entity_summary">
+                                            <h3 class = "experience_position">Project Intern</h3>
+                                            <p class = "experience_comp_name">VeriUs Technology<span class = "exp_bullet">Internship</span></p>
+                                            <div class = "experience_dates">
+                                                <h4 class = "exp_date">May 2019 – Jun 2019 </h4>
+                                            </div>
+                                            <h4 class = "exp_location"><span>Istanbul, Turkey</span></h4>
+                                        </div>
+                                    </a>
+                                    <div class = "element_details">
+                                        <p class = "element_description">
+                                            Developed a project within the engineering
+                                            team which involves sentiment analysis and
+                                            text classification work to classify film reviews
+                                            in the Turkish language for a film review site
+                                            holder customer, using open source libraries
+                                            (Zemberek) and Python libraries (Scikit-learn,
+                                            Pandas). This project aims to improve the user
+                                            experience within the film review sites by having
+                                            an initial idea of how many positive, negative
+                                            and neutral reviews that the film had.<br><br>
+                                            <b>Technologies used:</b> Python, Scikit-learn, pandas, matplotlib, Zemberek NLP<br>
+                                            <b>Github:</b> https://github.com/efehoplamaz/Turkish-NLP-text-classification-with-k-Nearest-Neighbors-algorithm
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+
+                        </li>
+                    </ul>
+
+                </div>
+
+
+
+                <div class = "experience" style = "border-bottom: 2px solid black;">
+                    <header class = "section_title">
+                        <h2 class = "pv-profile-section__card-heading">Personal Projects</h2>
+                    </header>
+                    
+                    <ul class = "list_of_experience">
+                        <li class = "exp_element">
+
+                            <section class = "exp_elm_inside">
+                                <div class = "element_container">
+                                    <a class = "element_info" href = "https://github.com/efehoplamaz/CameraClara">
+                                        <div class = "element_logo"><img class = "logo_img"></div>
+                                        <div class = "entity_summary">
+                                            <h3 class = "experience_position"> Camera Clara</h3>
+                                            <div class = "experience_dates">
+                                                <h4 class = "exp_date">The University of Edinburgh Embedded and Robotics Society, 2019 IoT Challenge Winner</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class = "element_details">
+                                        <p class = "element_description">
+                                            This is an app that helps estimate popularity of different exhibits/paintings/illusions at the 
+                                            Camera Obscura and World of Illusions, which is one of Edinburgh's most popular attractions.<br><br>
+
+                                            <b>Technologies used:</b> Python, OpenCV, Keras, matplotlib
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            
+
+                            <section class = "exp_elm_inside">
+                                <div class = "element_container">
+                                    <a class = "element_info" href = "https://github.com/efehoplamaz/Stock-Value-Prediction">
+                                        <div class = "element_logo"><img class = "logo_img"></div>
+                                        <div class = "entity_summary">
+                                            <h3 class = "experience_position"> Stock Value Prediction</h3>
+                                        </div>
+                                    </a>
+                                    <div class = "element_details">
+                                        <p class = "element_description">
+                                            A software which uses time series forecasting methods and sentiment analysis to extrapolate stock value. (This work is still in progress)
+                                            <br><br>
+                                            <b>Technologies used:</b> Python, Scikit-learn, pandas, Selenium
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+
+
+                            <section class = "exp_elm_inside">
+                                <div class = "element_container">
+                                    <a class = "element_info" href = "https://github.com/efehoplamaz/Clean-the-Burgh">
+                                        <div class = "element_logo"><img class = "logo_img"></div>
+                                        <div class = "entity_summary">
+                                            <h3 class = "experience_position"> Clean-the-Burgh</h3>
+                                            <div class = "experience_dates">
+                                                <h4 class = "exp_date">The University of Edinburgh Computer Society, 2018 Hack The Burgh JP Morgan Challenge Winner</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class = "element_details">
+                                        <p class = "element_description">
+                                            A software which uses Random Forest algorithm to classify whether the given news is fake or not.
+                                            <br><br>
+                                            <b>Technologies used:</b> Python, Scikit-learn, NLTK
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+
+                <div class = "experience" style = "border-bottom: 2px solid black;">
+                    <header class = "section_title">
+                        <h2 class = "pv-profile-section__card-heading">Technical Skills</h2>
+                    </header>
+                    
+                    <ul class = "list_of_experience">
+                        <li class = "exp_element">
+
+                            <section class = "exp_elm_inside">
+                                <div class = "element_container">
+                                    <a class = "element_info">
+                                    </a>
+                                    <div class = "element_details">
+                                        <p class = "element_description">
+                                            <b>Programming languages:</b> Python, Java, MATLAB, Haskell<br>
+                                            <b>Web Development:</b> HTML5, CSS, JavaScript<br>
+                                            <b>Python Data Science/Machine Learning libraries:</b> pandas, NumPy, Scikit-learn, matplotlib, seaborn<br>
+                                            <b>Deep Learning libraries:</b> Pytorch, Tensorflow<br>
+                                            <b>Python Web scrapping:</b> Requests, Beautiful Soup, Selenium<br>
+                                            <b>Query languages:</b> SQL
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class = "experience" style = "border-bottom: 2px solid black;">
+                    <header class = "section_title">
+                        <h2 class = "pv-profile-section__card-heading">Languages</h2>
+                    </header>
+                    
+                    <ul class = "list_of_experience">
+                        <li class = "exp_element">
+
+                            <section class = "exp_elm_inside">
+                                <div class = "element_container">
+                                    <a class = "element_info">
+                                    </a>
+                                    <div class = "element_details">
+                                        <p class = "element_description">
+                                            Turkish(native), English(fluent), Spanish(basic), German(basic)
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class = "experience">
+                    <header class = "section_title">
+                        <h2 class = "pv-profile-section__card-heading">Volunteer Experience</h2>
+                    </header>
+                    
+                    <ul class = "list_of_experience">
+                        <li class = "exp_element">
+
+                            <section class = "exp_elm_inside">
+                                <div class = "element_container">
+                                    <a class = "element_info" href = "https://www.facebook.com/turkish.society.uoe">
+                                        <div class = "element_logo"><img src= "https://media-exp1.licdn.com/dms/image/C560BAQENkP_MKF0ihA/company-logo_200_200/0?e=1612396800&v=beta&t=5S47iSpT3W0-FxJnHpPMUjTj2RsVmtQm-0HAYumO1p4" class = "logo_img"></div>
+                                        <div class = "entity_summary">
+                                            <h3 class = "experience_position">Secretary and Vice President</h3>
+                                            <p class = "experience_comp_name"> The University of Edinburgh Turkish Society
+                                            <div class = "experience_dates">
+                                                <h4 class = "exp_date">Apr 2019 – Jun 2020 </h4>
+                                            </div>
+                                            <h4 class = "exp_location"><span>Edinburgh, UK</span></h4>
+                                        </div>
+                                    </a>
+                                    <div class = "element_details">
+                                        <p class = "element_description">
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
 
     </body>
 
