@@ -148,6 +148,12 @@
     display: flex;
   }
 
+  header.section_title_np{
+    padding: 0 0 0 24px;
+    height: 78px;
+    display: flex;
+  }
+
   .pv-profile-section__card-heading {
     flex: 1;
     font-weight: 400;
@@ -216,6 +222,11 @@
     background: transparent;
   }
 
+  a.element_info_np{
+    padding: 0;
+    height: 38px;
+  }
+
   div.element_logo{
     height: 56px;
     width: 56px;
@@ -268,6 +279,7 @@
     box-sizing: inherit;
     display: block;
   }
+
 
   h3.experience_position{
     font-size: 1.6;
